@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-weight:bold;
+    font-family:'Raleway', sans-serif;
+}
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+form{
+    width:300px;
+    height:300px;
+    border-radius:5px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    padding:20px;
+    background:white;
+}
+h2{
+    color:#ffbe6a;
+    text-shadow:2px 2px 5px #f6ffaa;
+    text-align:center;
+}
+input{
+    width:80%;
+    height:30px;
+    outline:none;
+    border:none;
+    border-bottom:2px solid #ffbe6a;
+    background:transparent;
+    color:#ffbe6a;
+    padding:4px;
+    border-radius:4px;
+}
+#password span{
+    display:none;
+    opacity:0;
+    font-size:10px;
+    margin:5px 5px 0 0;
+    color:red;
+    transition:opacity .2s;
+}
+#username span{
+    display:none;
+    opacity:0;
+    font-size:10px;
+    margin:5px 5px 0 0;
+    color:red;
+    transition:opacity .2s;
+}
+#username{
+    order:1;
+    color:black;
+}
+input[type="text"]{
+    order:2;
+}
+#password{
+    order:3;
+    color:black;
+}
+input[type="password"]{
+    order:4;
+}
+#btn{
+    width:40%;
+    height:30px;
+    margin-left:60%;
+    order:5;
+    border:2px solid #ffbe6a;
+    color:black;
+    background:#ffbe6a;
+    border-radius:10px;
+    font-weight:bold;
+    letter-spacing:2px;
+    position:relative;
+}
+input[type="password"]:focus:valid{
+    border-bottom:2px solid #00ff04;
+    color:#00ff04;
+}
+input[type="password"]:focus:invalid{
+    border-bottom:2px solid red;
+    color:red;
+}
+input[type="password"]:focus:invalid~#password{
+    color:red;
+}
+input[type="password"]:focus:valid~#password{
+    color:#00ff04;
+}
+input[type="password"]:focus:invalid~#password span{
+    opacity:1;
+    display:block;
+}
+input[type="text"]:focus:valid{
+    border-bottom:2px solid #00ff04;
+    color:#00ff04;
+}
+input[type="text"]:focus:invalid{
+    border-bottom:2px solid red;
+    color:red;
+}
+input[type="text"]:focus:invalid~#username{
+    color:red;
+}
+input[type="text"]:focus:valid~#username{
+    color:#00ff04;
+}
+input[type="text"]:focus:invalid~#username span{
+    opacity:1;
+    display:block;
+}
+button span{
+    display:block;
+    position:absolute;
+    width:140px;
+    background:#333;
+    color:red;
+    font-size:10px;
+    padding:5px;
+    border-radius:5px;
+    top:-40px;
+    left:-40px;
+    opacity:0;
+    transition:opacity .5s;
+}
+button:hover span{
+    opacity:1;
+}
