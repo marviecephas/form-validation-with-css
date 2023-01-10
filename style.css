@@ -14,8 +14,8 @@ body{
     align-items:center;
 }
 form{
-    width:50%;
-    height:50%;
+    width:500px;
+    height:500px;
     border-radius:5px;
     display:flex;
     flex-direction:column;
