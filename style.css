@@ -135,3 +135,86 @@ button span{
 button:hover span{
     opacity:1;
 }
+.summary h2{
+    border:5px solid #ffbe6a;
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    bottom:30px;
+    right:10px;
+    animation:dance 1s linear infinite .9s;
+}
+@keyframes dance{
+    25%{
+        transform:translateY(5px)
+    }
+    50%{
+        transform:translateY(0)
+    }
+    75%{
+        transform:translateY(5px)
+    }
+    100%{
+        transform:translateY(0)
+    }    
+}
+.summary p{
+    position:fixed;
+    height:400px;
+    font-size:15px;
+    z-index:1;
+    background:#ffbe6a;
+    width:100%;
+    left:0;
+    bottom:-100%;
+    transition:bottom .9s,opacity .9s;
+    padding:20px;
+    line-height:1.5;
+    color:white;
+    overflow-y:scroll;
+    opacity:0;
+}
+.summary h2:hover~p{
+    bottom:0;
+    opacity:1;
+}
+a{
+    color:#00ff04;
+}
+@media (min-width:768px){
+    body{
+        display:flex;
+        justify-content:space-between;
+        min-height:100vh;
+        max-width:1300px;
+        margin:auto;
+        flex-direction:row;
+        overflow:hidden;
+       }
+   .form-content{
+        order:1;  
+        width:50%; 
+       }
+       .summary{
+           height:600px;
+           order:2;
+           position:relative;
+           width:50%;          
+       }
+       .summary h2{
+           display:none;
+       }
+       .summary p{
+           opacity:1;
+           position:relative;
+           top:0;           
+           height:100vh;
+           padding-top:120%;
+           font-size:20px;
+       }
+}
+
