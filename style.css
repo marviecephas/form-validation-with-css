@@ -203,7 +203,7 @@ a{
        .summary{
            height:600px;
            order:2;
-           position:relative;
+           position:;
            width:50%;          
        }
        .summary h2{
@@ -211,7 +211,7 @@ a{
        }
        .summary p{
            opacity:1;
-           position:relative;
+           position:absolute;
            top:0;           
            height:100vh;
            padding-top:120%;
