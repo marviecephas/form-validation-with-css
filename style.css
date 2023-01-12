@@ -204,14 +204,15 @@ a{
            height:600px;
            order:2;
            position:relative;
-           width:50%;          
+           width:50%; 
+           top:0;         
        }
        .summary h2{
            display:none;
        }
        .summary p{
            opacity:1;
-           position:absolute;
+           position:relative;
            top:0;           
            height:100vh;
            padding-top:120%;
