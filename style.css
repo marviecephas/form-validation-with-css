@@ -199,6 +199,7 @@ a{
    .form-content{
         order:1;  
         width:50%; 
+        justify-content:center;
        }
        .summary{
            height:600px;
