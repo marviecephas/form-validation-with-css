@@ -216,7 +216,7 @@ a{
            position:relative;
            top:0;           
            height:100%;
-           padding-top:25%;
+           padding-top:25px;
            font-size:20px;
        }
 }
