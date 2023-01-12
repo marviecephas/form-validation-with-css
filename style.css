@@ -216,6 +216,7 @@ a{
            top:0;           
            height:100%;
            padding-top:50%;
+           padding-bottom:50%;
            font-size:20px;
        }
 }
